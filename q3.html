@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/">
+            <h1>Job Application Form</h1>
+            <!-- Personal Information -->
+            <div class="heading">
+                <h3>Personal Information</h3>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="fname" class="input-label">First Name:</label>
+                    <input type="text" name="fname" id="fname" class="inputfield">
+                </div>
+                <div class="input-group">
+                    <label for="lname" class="input-label">Last Name:</label>
+                    <input type="text" name="lname" id="lname" class="inputfield">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="phone" class="input-label">Phone Number:</label>
+                    <input type="text" name="phone" id="phone" class="inputfield">
+                </div>
+                <div class="input-group">
+                    <label for="email" class="input-label">Email Address:</label>
+                    <input type="email" name="email" id="email" class="inputfield">
+                </div>
+            </div>
+            <!-- Address -->
+            <div class="heading">
+                <h3>Address</h3>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="state" class="input-label">State:</label>
+                    <input type="text" name="state" id="state" class="inputfield">
+                </div>
+                <div class="input-group">
+                    <label for="city" class="input-label">City:</label>
+                    <input type="text" name="city" id="city" class="inputfield">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="street" class="input-label">Street:</label>
+                    <input type="text" name="street" id="street" class="inputfield">
+                </div>
+                <div class="input-group">
+                    <label for="zip" class="input-label">ZIP Code:</label>
+                    <input type="text" name="zip" id="zip" class="inputfield">
+                </div>
+            </div>
+            <!-- Education -->
+            <div class="heading">
+                <h3>Education</h3>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="education" class="input-label">Highest Education Level</label>
+                    <select name="education" id="education" class="dropdown">
+                        <option value="PHD">PHD</option>
+                        <option value="Master's Degree">Master's Degree</option>
+                        <option value="Bachelor's Degree">Bachelor's Degree</option>
+                        <option value="Intermediate">Intermediate</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="institute" class="input-label">Institute:</label>
+                    <input type="text" name="institute" id="institute" class="inputfield">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="major" class="input-label">Major or Area of Study:</label>
+                    <input type="text" name="major" id="major" class="inputfield">
+                </div>
+                <div class="input-group">
+                    <label for="joiningYear" class="input-label">Year of Joining:</label>
+                    <input type="date" name="joiningYear" id="joiningYear" class="inputfield">
+                </div>
+                <div class="input-group">
+                    <label for="gradYear" class="input-label">Graduation Year:</label>
+                    <input type="date" name="gradYear" id="gradYear" class="inputfield">
+                </div>
+            </div>
+            <!-- Employment History -->
+            <div class="heading">
+                <h3>Employment History</h3>
+            </div>
+            <div id="employment-section">
+                <div class="employment-entry">
+                    <div class="input-group">
+                        <label for="jobTitle" class="input-label">Job Title</label>
+                        <input type="text" name="jobTitle" class="inputfield">
+                    </div>
+                    <div class="input-group">
+                        <label for="companyName" class="input-label">Company Name</label>
+                        <input type="text" name="companyName" class="inputfield">
+                    </div>
+                    <div class="input-group">
+                        <label for="jobResponsibilities" class="input-label">Job Responsibilities</label>
+                        <input type="text" name="jobResponsibilities" class="inputfield">
+                    </div>
+                    <div class="input-group" style="padding-bottom: 20px;">
+                        <label for="startDate" class="input-label">Start Date</label>
+                        <input type="date" name="startDate" id="startDate" class="inputfield">
+                    </div>
+                    <div class="input-group" style="padding-bottom: 20px;">
+                        <label for="endDate" class="input-label">End Date</label>
+                        <input type="date" name="endDate" id="endDate" class="inputfield">
+                    </div>
+                    <div style="margin: 20px;padding-left: 30px;">
+                        <label for="currentlyEmployed" class="input-label">Currently Employed</label>
+                        <input type="checkbox" name="currentlyEmployed" id="currentlyEmployed" class="checkbox-label">
+                        
+                    </div>
+                    
+                   
+                </div>
+               
+            </div>
+            <!-- Skills -->
+            <div class="heading">
+                <h3>Skills</h3>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="relevantSkills" class="input-label">Relevant Skills</label>
+                    <input type="text" name="relevantSkills" class="inputfield">
+                </div>
+                <div class="input-group">
+                    <label for="certifications" class="input-label">Certifications</label>
+                    <input type="text" name="certifications" class="inputfield">
+                </div>
+            </div>
+            <!-- Availability -->
+            <div class="heading">
+                <h3>Availability</h3>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="startDate" class="input-label">Start Date</label>
+                    <input type="date" name="startDate" class="inputfield">
+                </div>
+                <div class="input-group">
+                    <label for="preferredSchedule" class="input-label">Preferred Work Schedule</label>
+                    <input type="text" name="preferredSchedule" class="inputfield">
+                </div>
+                <div class="input-group">
+                    <label for="relocate" class="input-label">Willingness to Relocate</label>
+                    <input type="text" name="relocate" class="inputfield">
+                </div>
+            </div>
+            <!-- References -->
+            <div class="heading">
+                <h3>References</h3>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="referenceName" class="input-label">Reference Name</label>
+                    <input type="text" name="referenceName" class="inputfield">
+                </div>
+                <div class="input-group">
+                    <label for="referenceContact" class="input-label">Reference Contact Information</label>
+                    <input type="text" name="referenceContact" class="inputfield">
+                </div>
+                <div class="input-group">
+                    <label for="relationship" class="input-label">Relationship to Applicant</label>
+                    <input type="text" name="relationship" class="inputfield">
+                </div>
+            </div>
+            <!-- Additional Questions -->
+            <div class="heading">
+                <h3>Additional Questions</h3>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="whyWorkHere" class="input-label">Why do you want to work for this company?</label>
+                    <input type="text" name="whyWorkHere" class="inputfield">
+                </div>
+            </div>
+            <!-- Consent and Agreement -->
+            <div class="heading">
+                <h3>Consent and Agreement</h3>
+            </div>
+            
+            <div style="margin: 20px;padding-left: 30px;">
+                    <label for="termsConditions" class="input-label" style="font-weight: normal;">Terms and Conditions</label>
+                    <input type="checkbox" name="termsConditions" class="checkbox-label">
+            </div>
+            
+            <div style="margin: 20px;padding-left: 30px;">
+                    <label for="privacyPolicy" class="input-label" style="font-weight: normal;">Privacy Policy Acknowledgment</label>
+                    <input type="checkbox" name="privacyPolicy" class="checkbox-label"  >
+                
+                </div>
+          
+            <!-- Submit Button -->
+            <div class="input-row">
+                <button type="submit" class="submitbutton">Submit</button>
+            </div>
+        </form>
+
+        <div id="applicationTableContainer" style="display: none;">
+            <h2>Your Job Application</h2>
+            <table id="applicationTable">
+                <!-- Application data will be inserted here -->
+            </table>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
